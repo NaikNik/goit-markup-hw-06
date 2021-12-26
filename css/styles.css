@@ -291,16 +291,34 @@ header {
 }
 
 .mailing-section {
+    position: relative;
+    display: flex;
+    min-width: 570px;
+    height: 86px;
     margin-left: 93px;
+    flex-direction: column;
 }
 
 .mailing-section button {
-    display: inline-block;
+    position: absolute;
+    top: 36px;
+    left: 370px;
+    display: block;
     margin-left: 12px;
-    min-width: 200px;
+    width: 200px;
     height: 50px;
+    padding-left: 6px;
     background-color: var(--theme-color);
     color: var(--text-secondary-lighter);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em
+}
+
+.mailing-section button::after {
+    content: '';
+    background-image: url(./images/icon-send.svg);
+    background-size: 24px 24px;
 }
 
 .mailing-header {
