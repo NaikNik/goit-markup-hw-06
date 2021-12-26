@@ -303,11 +303,13 @@ header {
     position: absolute;
     top: 36px;
     left: 370px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 12px;
     width: 200px;
     height: 50px;
-    padding-left: 6px;
+    padding: 0;
     background-color: var(--theme-color);
     color: var(--text-secondary-lighter);
     font-weight: bold;
@@ -316,9 +318,17 @@ header {
 }
 
 .mailing-section button::after {
+    /* position: absolute;
+    top: 13px;
+    left: 148px; */
     content: '';
-    background-image: url(./images/icon-send.svg);
-    background-size: 24px 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: ;
+    margin-left: 10px;
+    margin-top: 1px;
+    background-image: url(../images/icon-send.svg);
 }
 
 .mailing-header {
