@@ -95,12 +95,13 @@
                   <label for="usermail" class="form-label">Почта</label>
                 </div>
                 <div class="form-field form-field-comment">
-                  <input
+                  <textarea
                     name="usercomment"
-                    type="text"
                     id="usercomment"
                     placeholder="Введите текст"
-                  />
+                  >
+                  </textarea>
+
                   <label for="usercomment" class="form-label"
                     >Комментарий</label
                   >
@@ -109,7 +110,7 @@
                   <input type="checkbox" id="user-agree" name="submit" />
                   <label for="user-agree">
                     Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
+                    <a class="contract-conditions" href="">Условия договора</a>
                     </label>
         </div>
         <button class="buttons button-submit" type="submit">
